@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 
 import { Actions, ActionConst } from 'react-native-router-flux';
-import { Container,Content, Text, Item, Input, Button, Icon, Left, Right, Body, Header } from 'native-base';
+import { Container,Content, Text, Switch, Item, ListItem, Input, Radio, Button, Icon, Left, Right, Body, Header } from 'native-base';
 
 import HeaderContent from './../headerContent/';
 
@@ -35,10 +35,34 @@ class Login extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+               selectedRole: 'parent',
+               selectedRoleParent: true,
+               selectedRoleStaff: false
+             }
   }
 
   doLogin(user,password) {
     Actions.webportal();
+  }
+
+  setRole(role) {
+    if (role == 'parent') {
+      //this.state.selectedRole = 'parent'
+      this.state = {
+                 selectedRole: 'parent',
+                 selectedRoleParent: true,
+                 selectedRoleStaff: false
+               }
+    } else {
+      //this.state.selectedRole = 'staff'
+      this.state = {
+                 selectedRole: 'staff',
+                 selectedRoleParent: false,
+                 selectedRoleStaff: true
+               }
+    }
+
   }
 
   render() {
@@ -72,6 +96,31 @@ class Login extends Component {
                   style={styles.input}
                 />
               </Item>
+
+              <ListItem>
+                 <Left>
+                   <Radio selected={this.state.selectedRoleParent} />
+                     <TouchableOpacity  onPress={() => { this.setRole('parent') }} >
+                         <Text>Parent</Text>
+                 </TouchableOpacity>
+   </Left>
+   <Right>
+
+                 </Right>
+
+               </ListItem>
+               <ListItem>
+                 <Left>
+                     <TouchableOpacity  onPress={() => { this.setRole('parent') }} >
+                   <Radio selected={this.state.selectedRoleStaff} />
+                 <Text>Staff</Text>
+                        </TouchableOpacity>
+                 </Left>
+                 <Right>
+
+               </Right>
+
+               </ListItem>
 
               <Button
                 rounded primary block large
