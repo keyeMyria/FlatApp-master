@@ -14,7 +14,7 @@ export default {
 
     // Badge
   badgeBg: '#ED1727',    //bright red
-  badgeColor: '#fff',
+  badgeColor: '#000',
 
   // Button
   btnFontFamily: (Platform.OS === 'ios') ? 'HelveticaNeue' : 'Roboto_medium',

@@ -14,8 +14,8 @@ export default {
     height: null,
   },
   beta: {
-    backgroundColor: 'white',
-    color: '#e9e9e9',
+    backgroundColor: 'black',
+    color: 'grey',
     alignSelf: 'center',
     flex: 1,
     flexDirection: 'row',
@@ -30,7 +30,7 @@ export default {
   betaButton: {
     paddingTop: 50,
         paddingBottom: 20,
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     alignSelf: 'center',
     flex: 1,
     flexDirection: 'row',
@@ -42,14 +42,18 @@ export default {
     flex: 1,
   },
 
-
+  halloweengif: {
+    width: null,
+    height: 300,
+    flex: 1,
+  },
   footer: {
-    backgroundColor: 'white',
+    backgroundColor: 'black',
 },
 
 
   footerTab: {
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     paddingTop:3
   },
 
@@ -75,7 +79,7 @@ export default {
     alignSelf: 'center',
     opacity: 0.8,
     fontWeight: 'bold',
-    color: '#FFF',
+    color: '#000',
   },
   profilePic: {
     height: 0,
@@ -84,7 +88,7 @@ export default {
     alignSelf: 'center',
     alignItems: 'center',
     //backgroundColor: 'rgba(0,0,0,0.1)'
-    backgroundColor: '#141b4d',
+    backgroundColor: 'b',
     borderRadius: 30,
     width: 60,
     height: 60,
@@ -106,7 +110,7 @@ export default {
     paddingBottom: 10,
   },
   linkTabs: {
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
   },
   linkTabs_header: {
     padding: 15,
@@ -137,7 +141,7 @@ export default {
     marginLeft: 0,
     fontWeight: 'bold',
     fontSize: 30,
-    color:'white',
+    color:'grey',
   },
   icon2: {
     fontWeight: 'bold',
@@ -159,8 +163,10 @@ export default {
 
   },
   newsContentLine: {
-    borderTopWidth: 1,
+    borderTopWidth: -100,
     borderTopColor: '#ddd',
+        color:'black',
+        backgroundColor: 'black'
   },
   newsContent: {
     flexDirection: 'column',
@@ -184,7 +190,7 @@ export default {
   newsHeader: {
       paddingTop: 10,
       paddingBottom: 5,
-    color: '#444',
+    color: '#AE3843',
     fontWeight: 'bold',
   },
   newsLink: {
@@ -208,4 +214,14 @@ export default {
     paddingTop: 0,
 
   },
+
+  newsTypeTextSmall: {
+    textAlign: 'left',
+    color: '#666',
+    fontSize: 10,
+
+    paddingTop: 5,
+
+  },
+
 };

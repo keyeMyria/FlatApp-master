@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Image, View, TouchableOpacity } from 'react-native';
+import { ImageBackground, Image, View, TouchableOpacity } from 'react-native';
 
 import { Actions } from 'react-native-router-flux';
 import { Container, Content, Footer, FooterTab, Text, Thumbnail, Icon, Button } from 'native-base';
@@ -48,8 +48,13 @@ class HomeNav extends Component {
           <HeaderContent
             showHome='false'
            />
-          <Content showsVerticalScrollIndicator={false}>
+          <Content showsVerticalScrollIndicator={false} style={styles.footerTab}>
+
+
+
+
             <View style={styles.linkTabs}>
+            <ImageBackground source={require('../../../images/sais.edu.sg/halloweengif.gif')} style={styles.halloweengif}>
               <Grid>
 
               <Row style={{paddingTop: 40}}>
@@ -69,11 +74,7 @@ class HomeNav extends Component {
                   <Button transparent style={styles.roundedButton}  onPress={() => { Actions.webportal(); }} >
                     <Icon style={styles.icon} name="ios-grid" />
                     </Button>
-                      <View style={{flex: 1, flexDirection: 'row',     alignSelf: 'center'}}>
-
-                        <Icon style={styles.iconLabel} name="ios-lock-outline" />
                         <Text note style={styles.buttonLabel}> myStamford</Text>
-                  </View>
                 </Col>
             </Row>
             <Row style={{paddingTop: 20, paddingBottom: 40}}>
@@ -100,32 +101,61 @@ class HomeNav extends Component {
 
             </Row>
               </Grid>
+ </ImageBackground>
             </View>
+
 
 
 
             <View style={styles.newsContentLine}>
 
 
-              <TouchableOpacity style={{ flexDirection: 'column' }}  onPress={() => { Actions.ptaEvents(); }} >
-                <Image source={require('../../../images/sais.edu.sg/diwali.jpg')} style={styles.storyPhoto} />
+              <TouchableOpacity style={{ flexDirection: 'row' }} >
 
-              </TouchableOpacity>
-            </View>
-
-            <View style={styles.newsContentLine}>
-
-
-              <TouchableOpacity style={{ flexDirection: 'row' }}  onPress={() => { Actions.ptaHome(); }} >
-                <Image source={require('../../../images/sais.edu.sg/pta_page_logo_small.png')} style={styles.newsImage} />
                 <View style={styles.newsContentNoLine}>
                   <Text numberOfLines={1} style={styles.newsHeader}>
-                                    PTA Parent Connection Groups
+                                    Halloween
                                     </Text>
 
                                     <Text style={styles.newsTypeText}>
-Are you interested in meeting people with similar interests within the Stamford community?
+                                    It is October and the Halloween Committee
+                                    is brewing up some fun!
                                     </Text>
+  <Text style={styles.newsTypeText}>
+  </Text>
+
+  <Text style={styles.newsHeader}>Early Early Years Halloween Activities</Text>
+  <Text style={styles.newsTypeText}>Friday - November 3 -  Parents are welcome</Text>
+  <Text style={styles.newsTypeText}>9:00am - 12:00pm The Early Years will be tricked and treated with a morning of silly spookiness</Text>
+
+
+<Text style={styles.newsTypeTextSmall}>Please send your child in costume but leave masks, weapons and magic potions at home (costumes are not mandatory - wear school uniforms if not wearing a costume).</Text>
+
+
+<Text style={styles.newsHeader}>Elementary and Middle School Dress Up</Text>
+<Text style={styles.newsTypeText}>Tuesday - October 31 - Parents are welcome</Text>
+<Text style={styles.newsTypeText}>9:00am - 10:00am - Upper Elementary Parade  </Text>
+<Text style={styles.newsTypeText}>10:00am - 11:00am - Lower Elementary Parade  </Text>
+
+<Text style={styles.newsTypeTextSmall}>A Parade for Elementary students will be held on Stamford Field on October 31. Please send your child in costume but leave masks, weapons and magic potions at home (costumes are not mandatory - please wear school uniforms if not wearing a costume).
+
+* Please be mindful of the heat and PE classes and send a change of clothes*
+
+
+</Text>
+
+
+<Text style={styles.newsHeader}>Middle School and Senior School </Text>
+<Text style={styles.newsTypeText}>Tuesday - October 31 </Text>
+<Text style={styles.newsTypeTextSmall}>Costumes to school instead of uniforms OR wear uniform.</Text>
+<Text style={styles.newsTypeText}></Text>
+<Text style={styles.newsTypeText}>Friday - November 3</Text>
+
+
+<Text style={styles.newsTypeText}>5:00pm - 7.30pm MS Dance and Haunted House -  Stamford Arena</Text>
+<Text style={styles.newsTypeText}>8:00pm – 10:00pm HS Dance and Haunted House –  Adams Cafeteria</Text>
+<Text style={styles.newsTypeTextSmall}>Middle School and Senior School - Wear Uniform to school and dress up for dance.</Text>
+
 
                 <View style={{flexDirection: 'column'}}>
                   <Text numberOfLines={1} style={ styles.newsLink}></Text>
@@ -135,17 +165,7 @@ Are you interested in meeting people with similar interests within the Stamford 
               </TouchableOpacity>
             </View>
 
-            <View>
-            <MapView
 
-                   initialRegion={{
-                     latitude: 37.78825,
-                     longitude: -122.4324,
-                     latitudeDelta: 0.0922,
-                     longitudeDelta: 0.0421,
-                   }}
-                 />
-            </View>
 
             <Button style={styles.betaButton} transparent onPress={() => { this._checkForUpdate(); }}>
               <View style={styles.betaView}>
