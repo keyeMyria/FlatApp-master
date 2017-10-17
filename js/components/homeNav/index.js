@@ -124,12 +124,6 @@ class HomeNav extends Component {
   <Text style={styles.newsTypeText}>
   </Text>
 
-  <Text style={styles.newsHeader}>Early Early Years Halloween Activities</Text>
-  <Text style={styles.newsTypeText}>Friday - November 3 -  Parents are welcome</Text>
-  <Text style={styles.newsTypeText}>9:00am - 12:00pm The Early Years will be tricked and treated with a morning of silly spookiness</Text>
-
-
-<Text style={styles.newsTypeTextSmall}>Please send your child in costume but leave masks, weapons and magic potions at home (costumes are not mandatory - wear school uniforms if not wearing a costume).</Text>
 
 
 <Text style={styles.newsHeader}>Elementary and Middle School Dress Up</Text>
@@ -143,6 +137,12 @@ class HomeNav extends Component {
 
 
 </Text>
+<Text style={styles.newsHeader}>Early Early Years Halloween Activities</Text>
+<Text style={styles.newsTypeText}>Friday - November 3 -  Parents are welcome</Text>
+<Text style={styles.newsTypeText}>9:00am - 12:00pm The Early Years will be tricked and treated with a morning of silly spookiness</Text>
+
+
+<Text style={styles.newsTypeTextSmall}>Please send your child in costume but leave masks, weapons and magic potions at home (costumes are not mandatory - wear school uniforms if not wearing a costume).</Text>
 
 
 <Text style={styles.newsHeader}>Middle School and Senior School </Text>
