@@ -104,8 +104,13 @@ class HomeNav extends Component {
  </ImageBackground>
             </View>
 
+            <View style={styles.newsContentLine}>
 
+              <TouchableOpacity style={{ flexDirection: 'column' }}  onPress={() => { Actions.ptaEvents(); }} >
+                <Image source={require('../../../images/sais.edu.sg/diwali.jpg')} style={styles.storyPhoto} />
 
+              </TouchableOpacity>
+            </View>
 
             <View style={styles.newsContentLine}>
 
