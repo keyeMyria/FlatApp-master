@@ -104,7 +104,8 @@ class HomeNav extends Component {
  </ImageBackground>
             </View>
 
-          
+
+
             <View style={styles.newsContentLine}>
 
 
@@ -129,7 +130,7 @@ class HomeNav extends Component {
 <Text style={styles.newsTypeText}>9:00am - 10:00am - Upper Elementary Parade  </Text>
 <Text style={styles.newsTypeText}>10:00am - 11:00am - Lower Elementary Parade  </Text>
 
-<Text style={styles.newsTypeTextSmall}>A Parade for Elementary students will be held on Stamford Field on October 31. Please send your child in costume but leave masks, weapons and magic potions at home (costumes are not mandatory - please wear school uniforms if not wearing a costume).
+<Text style={styles.newsTypeTextSmall}>A Parade for Elementary students will be held in the Jefferson Arena on October 31. Please send your child in costume but leave masks, weapons and magic potions at home (costumes are not mandatory - please wear school uniforms if not wearing a costume).
 
 * Please be mindful of the heat and PE classes and send a change of clothes*
 
