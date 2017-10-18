@@ -109,7 +109,7 @@ class HomeNav extends Component {
             <View style={styles.newsContentLine}>
 
 
-              <TouchableOpacity style={{ flexDirection: 'row' }} >
+              <TouchableOpacity style={{ flexDirection: 'row' }}  onPress={() => { Actions.ptaHalloween(); }} >
 
                 <View style={styles.newsContentNoLine}>
                   <Text numberOfLines={1} style={styles.newsHeader}>
@@ -117,43 +117,38 @@ class HomeNav extends Component {
                                     </Text>
 
                                     <Text style={styles.newsTypeText}>
-                                    It is October and the Halloween Committee
-                                    is brewing up some fun!
+                          Following a fun few days of Deepavali, we now find Halloween quickly upon us!
                                     </Text>
-  <Text style={styles.newsTypeText}>
+  <Text style={styles.newsTypeTextSmall}>
+
+Activities start in the week we return from Fall Break.
+
   </Text>
 
 
 
-<Text style={styles.newsHeader}>Elementary and Middle School Dress Up</Text>
-<Text style={styles.newsTypeText}>Tuesday - October 31 - Parents are welcome</Text>
-<Text style={styles.newsTypeText}>9:00am - 10:00am - Upper Elementary Parade  </Text>
-<Text style={styles.newsTypeText}>10:00am - 11:00am - Lower Elementary Parade  </Text>
+<Text style={styles.newsHeader}>Early Years Morning of Silly Spookiness</Text>
+<Text style={styles.newsTypeText}>Friday, November 3</Text>
+<Text style={styles.newsTypeText}>9:00 am to 12:00 pm Halloween activities and sensory fun</Text>
 
-<Text style={styles.newsTypeTextSmall}>A Parade for Elementary students will be held in the Jefferson Arena on October 31. Please send your child in costume but leave masks, weapons and magic potions at home (costumes are not mandatory - please wear school uniforms if not wearing a costume).
-
-* Please be mindful of the heat and PE classes and send a change of clothes*
-
-
-</Text>
-<Text style={styles.newsHeader}>Early Early Years Halloween Activities</Text>
-<Text style={styles.newsTypeText}>Friday - November 3 -  Parents are welcome</Text>
-<Text style={styles.newsTypeText}>9:00am - 12:00pm The Early Years will be tricked and treated with a morning of silly spookiness</Text>
+<Text style={styles.newsHeader}>Halloween Dress Up</Text>
+<Text style={styles.newsTypeText}>Tuesday, October 31</Text>
+<Text style={styles.newsTypeText}>All Woodleigh students are invited to come dressed in their Halloween costumes</Text>
 
 
-<Text style={styles.newsTypeTextSmall}>Please send your child in costume but leave masks, weapons and magic potions at home (costumes are not mandatory - wear school uniforms if not wearing a costume).</Text>
+<Text style={styles.newsHeader}>Elementary Parade</Text>
+<Text style={styles.newsTypeText}>Tuesday, October 31</Text>
+
+<Text style={styles.newsTypeText}>PARADE SCHEDULE</Text>
+<Text style={styles.newsTypeText}>9:00 am to 10:00 am - Upper Elementary (KG2-G2)</Text>
+<Text style={styles.newsTypeText}>10:00 am to 11:00 am - Lower Elementary (G3-G5) </Text>
 
 
-<Text style={styles.newsHeader}>Middle School and Senior School </Text>
-<Text style={styles.newsTypeText}>Tuesday - October 31 </Text>
-<Text style={styles.newsTypeTextSmall}>Costumes to school instead of uniforms OR wear uniform.</Text>
-<Text style={styles.newsTypeText}></Text>
-<Text style={styles.newsTypeText}>Friday - November 3</Text>
-
-
-<Text style={styles.newsTypeText}>5:00pm - 7.30pm MS Dance and Haunted House -  Stamford Arena</Text>
-<Text style={styles.newsTypeText}>8:00pm – 10:00pm HS Dance and Haunted House –  Adams Cafeteria</Text>
-<Text style={styles.newsTypeTextSmall}>Middle School and Senior School - Wear Uniform to school and dress up for dance.</Text>
+<Text style={styles.newsHeader}>Secondary Haunted House and Dances</Text>
+<Text style={styles.newsTypeText}>Friday, November 3</Text>
+<Text style={styles.newsTypeText}>SCHEDULE</Text>
+<Text style={styles.newsTypeText}>5:00 pm to 7.30 pm - Middle School (G6-G8)</Text>
+<Text style={styles.newsTypeText}>8:00 pm to 10:00 pm - High SChool (G9-G12)</Text>
 
 
                 <View style={{flexDirection: 'column'}}>

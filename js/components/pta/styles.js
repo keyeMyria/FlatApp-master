@@ -76,11 +76,23 @@ export default {
   },
   ptaMovieNight: {
     width: null,
-    height: 171,
+    height: 200,
     flex: 1,
         resizeMode: 'contain'
   },
+  halloweentop: {
+    width: null,
+    height: 281,
+    flex: 1,
 
+  },
+
+
+  storyPhoto: {
+    width: null,
+    height: 200,
+    flex: 1,
+  },
   storyPhoto: {
     width: null,
     height: 200,
