@@ -116,16 +116,8 @@ class HomeNav extends Component {
                                     Halloween
                                     </Text>
 
-                                    <Text style={styles.newsTypeText}>
-                          Following a fun few days of Deepavali, we now find Halloween quickly upon us!
-                                    </Text>
-  <Text style={styles.newsTypeTextSmall}>
-
-Activities start in the week we return from Fall Break.
-
-  </Text>
-
-
+<Text style={styles.newsTypeText}>Following a fun few days of Deepavali, we now find Halloween quickly upon us!</Text>
+<Text style={styles.newsTypeTextSmall}>Activities start in the week we return from Fall Break.</Text>
 
 <Text style={styles.newsHeader}>Early Years Morning of Silly Spookiness</Text>
 <Text style={styles.newsTypeText}>Friday, November 3</Text>
@@ -140,15 +132,15 @@ Activities start in the week we return from Fall Break.
 <Text style={styles.newsTypeText}>Tuesday, October 31</Text>
 
 <Text style={styles.newsTypeText}>PARADE SCHEDULE</Text>
-<Text style={styles.newsTypeText}>9:00 am to 10:00 am - Upper Elementary (KG2-G2)</Text>
-<Text style={styles.newsTypeText}>10:00 am to 11:00 am - Lower Elementary (G3-G5) </Text>
+<Text style={styles.newsTypeText}>9:00 am to 10:00 am - Upper Elementary (G3-G5) </Text>
+<Text style={styles.newsTypeText}>10:00 am to 11:00 am - Lower Elementary (KG2-G2)</Text>
 
 
 <Text style={styles.newsHeader}>Secondary Haunted House and Dances</Text>
 <Text style={styles.newsTypeText}>Friday, November 3</Text>
 <Text style={styles.newsTypeText}>SCHEDULE</Text>
 <Text style={styles.newsTypeText}>5:00 pm to 7.30 pm - Middle School (G6-G8)</Text>
-<Text style={styles.newsTypeText}>8:00 pm to 10:00 pm - High SChool (G9-G12)</Text>
+<Text style={styles.newsTypeText}>8:00 pm to 10:00 pm - High School (G9-G12)</Text>
 
 
                 <View style={{flexDirection: 'column'}}>

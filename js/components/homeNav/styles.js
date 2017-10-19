@@ -124,12 +124,12 @@ export default {
     paddingBottom: Platform.OS === 'android' ? 3 : 0,
   },
   buttonLabel: {
-    color: '#707372',
+    color: '#fff',
     alignSelf: 'center',
     paddingTop: 10
   },
   iconLabel: {
-    color: '#707372',
+    color: '#fff',
     alignSelf: 'center',
     paddingTop: 10,
     fontSize: 15,
@@ -141,7 +141,7 @@ export default {
     marginLeft: 0,
     fontWeight: 'bold',
     fontSize: 30,
-    color:'grey',
+    color:'#fff',
   },
   icon2: {
     fontWeight: 'bold',
@@ -208,7 +208,7 @@ export default {
   },
   newsTypeText: {
     textAlign: 'left',
-    color: '#666',
+    color: '#fff',
     fontSize: 12,
     fontWeight: 'bold',
     paddingTop: 0,
@@ -217,7 +217,7 @@ export default {
 
   newsTypeTextSmall: {
     textAlign: 'left',
-    color: '#666',
+    color: '#fff',
     fontSize: 10,
 
     paddingTop: 5,
