@@ -101,7 +101,7 @@ class ptaHalloween extends Component {
                     <Text style={styles.headerTextIcon}>Secondary Haunted House and Dances</Text>
                     <Text style={styles.newsTypeText}>Friday, November 3</Text>
 
-                    <Text style={styles.newsTypeText}>5:00 pm to 7.30 pm - Middle School (G6-G8)</Text>
+                    <Text style={styles.newsTypeText}>5:00 pm to 7.00 pm - Middle School (G6-G8)</Text>
                     <Text style={styles.newsTypeText}>8:00 pm to 10:00 pm - High SChool (G9-G12)</Text>
                       <Text style={styles.newsTypeText}></Text>
     <View style={styles.newsCommentContainer}>
